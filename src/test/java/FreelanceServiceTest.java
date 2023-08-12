@@ -14,7 +14,7 @@ public class FreelanceServiceTest {
 //    "2, 100000, 60000, 150000"
 //   })
 
-    @CsvFileSource(files = "src\test\resources\freelance.csv")
+    @CsvFileSource(files = "src/test/resources/freelance.csv")
     public void testCalcCount(int expected, int income, int expenses, int threshhold) {
         FreelanceService service = new FreelanceService();
 
